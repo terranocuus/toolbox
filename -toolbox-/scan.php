@@ -80,14 +80,14 @@ class scan {
 		
 		
 	//DIRECT METHODS
-	function dirs($dir, $depth=0) {
+	static function dirs($dir, $depth=0) {
 		$scan = new scan();
 		$scan->depth		= (int)$depth;
 		
 		return $scan->get_dirs($dir);
 		}
 		
-	function files($dir, $depth=0) {
+	static function files($dir, $depth=0) {
 		$scan = new scan();
 		$scan->all_files	= true;
 		$scan->depth		= (int)$depth;
